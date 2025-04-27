@@ -50,10 +50,8 @@ material_id,formula,nsites,symmetry-number,symmetry-symbol,LDA,1shot,2shot,trans
 2534,GaAs,2,216,F\overline{4}3m,0.00,1.03,1.33,D
 2853,GaN,2,225,Fm\overline{3}m,0.19,1.60,1.80,I
 2490,GaP,2,216,F\overline{4}3m,1.44,2.33,2.47,I
-10759,GeSe,2,225,Fm\overline{3}m,0.10,0.09,0.10,I
 2612,GeTe,2,225,Fm\overline{3}m,0.41,0.45,0.44,D
 938,GeTe,2,160,R3m,0.73,0.92,0.91,I
-632291,H_2,2,139,I4/mmm,8.29,8.29,8.29,I
 20351,InP,2,216,F\overline{4}3m,0.36,1.23,1.44,D
 23251,KBr,2,225,Fm\overline{3}m,4.27,7.42,8.03,D
 570891,KBr,2,221,Pm\overline{3}m,3.74,6.62,7.21,I
@@ -78,7 +76,6 @@ material_id,formula,nsites,symmetry-number,symmetry-symbol,LDA,1shot,2shot,trans
 23259,LiBr,2,225,Fm\overline{3}m,5.06,7.84,8.31,I
 22905,LiCl,2,225,Fm\overline{3}m,6.41,9.59,10.13,I
 1138,LiF,2,225,Fm\overline{3}m,8.79,13.99,14.85,D
-23703,LiH,2,225,Fm\overline{3}m,2.63,2.63,2.63,D
 22899,LiI,2,225,Fm\overline{3}m,4.29,6.40,6.71,I
 1009129,MgO,2,187,P\overline{6}m2,3.03,5.85,6.43,I
 1265,MgO,2,225,Fm\overline{3}m,4.89,8.29,8.89,D
@@ -296,7 +293,6 @@ material_id,formula,nsites,symmetry-number,symmetry-symbol,LDA,1shot,2shot,trans
 1018275,GaP,4,166,R\overline{3}m,0.72,1.46,1.56,I
 9889,GaS,4,166,R\overline{3}m,1.44,3.00,3.25,I
 11342,GaSe,4,160,R3m,1.10,2.67,3.00,D
-24504,H_2,4,194,P6_3/mmc,8.97,8.97,8.97,D
 632229,HBr,4,36,Cmc2_1,4.33,7.95,8.63,D
 632326,HCl,4,36,Cmc2_1,5.36,9.54,10.28,D
 632296,HF,4,36,Cmc2_1,6.40,12.53,13.54,D
