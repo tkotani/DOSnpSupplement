@@ -1,0 +1,95 @@
+set term pngcairo enhanced size 9.5in, 5in
+set output "/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130_bandpng/LDA/mp-9881.png"
+unset key
+set multiplot
+set xzeroaxis
+set yzeroaxis
+set grid
+
+# # # Variables # # #
+# # # setting font of letters # # #
+set title font "Helvetica,25" offset 0,-0.7
+set xlabel font "Helvetica,20"
+set ylabel font "Helvetica,20" offset 1,0
+set xtics font "Helvetica,15"
+set ytics font "Helvetica,15"
+
+# # # band plot majority # # # 
+set border lw 1
+set ylabel "Energy (eV)"
+set ytics 4
+set title "[LDA] mp-9881 K_2Au_2Se_2"
+set size 0.7 , 0.5
+set yrange [   -10.00000:    14.00000]
+set tmargin screen 0.85
+set bmargin screen 0.15
+set lmargin screen 0.10
+set rmargin screen 0.80
+set xtics  ('Γ'   0.0000000000,\
+'Y'   0.1238945509,\
+'C_0|Σ_0'   0.1507612245,\
+'Γ'   0.2775353461,\
+'Z'   0.3503310838,\
+'A_0|E_0'   0.4771052054,\
+'T'   0.5039718790,\
+'Y|Γ'   0.5767676168,\
+'S'   0.6754531701,\
+'R'   0.7482489079,\
+'Z'   0.8469344611,\
+'T'   0.9708290120)
+tpia=2*3.1415926/     1.88973
+
+plot "/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd001.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd001.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd002.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd002.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd003.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd003.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd004.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd004.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd005.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd005.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd006.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd006.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd007.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd007.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd008.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd008.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd009.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd009.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd010.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd010.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd011.spin1" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+"/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/bnd011.spin2" u ($2):($3) w l lt 1 lw 1 lc rgb "red" ti "",\
+
+
+unset xtics
+unset ytics
+
+# # # DOS plot # # #
+set border lw 1
+set size 0.15 , 0.5
+set title "DOS"
+unset y2label
+unset grid
+set xtics 20
+set yrange [   -10.00000:    14.00000]
+set xrange [0:15]
+set tmargin screen 0.85
+set bmargin screen 0.15
+set lmargin screen 0.8
+set rmargin screen 0.95
+unset ylabel
+
+# # # setting font of letters # # #
+set title font "Helvetica,25" offset 0,-0.7
+set xlabel font "Helvetica,25"
+set ylabel font "Helvetica,25"
+set xtics font "Helvetica,25"
+set noytics
+set noxtics
+
+set style fill transparent solid 0.5 noborder
+
+rydberg=13.605
+plot "/home/takao/ecalj/ecalj_auto/OUTPUT/gw1500/start@20250627-112130/mp-9881/LDA/dos.tot.mp-9881" u ($2/rydberg):($1*rydberg) w l lw 1 lc rgb "black"
