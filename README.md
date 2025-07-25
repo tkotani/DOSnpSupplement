@@ -11,7 +11,10 @@ in good agreements with experiments. (For example, MP2534 gives a=5.75 $\AA$ for
 experiments.). We found no band gap of VWN exchange correlation with a=5.75 $\AA$.
 * When 1shotQSGW and 2ndshowQSGW are rather different, Probably a little away from QSGW converged values.
 
-We use csvmd.py to convert tab_non_mag_all.csv to this md format.
+* Since PDOS used for our DOSnp paper is too huge. Ask us if necessary.
+
+* We use csvmd.py to convert tab_non_mag_all.csv to this md format.
+
 
 | mp-id | formula | nsites | symmetry-number | symmetry-symbol | LDA(VWN) | 1shotQSGW | 2shotQSGW | transition(D or I) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
