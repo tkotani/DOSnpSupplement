@@ -1,6 +1,6 @@
 # Dataset of band gaps in QSGW
 
-We use ecalj_auto implemented at ecalj/ecalj_auto in [ecalj package](github.com/tkotani/ecalj).
+We use ecalj_auto implemented at ecalj/ecalj_auto in [ecalj package](https://github.com/tkotani/ecalj).
 Crystal structures are tiven in ecalj/ecalj_atuo/INPUT/gw1500.
 To reproduce the result, run jobgw1500.sh. (In advance, check ecalj_atuo/README.md. You need modify a little to fit to your system).
 
