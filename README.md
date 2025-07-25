@@ -1,15 +1,15 @@
 # Dataset of band gaps in QSGW
 
-We use ecalj_auto implemented at ecalj/ecalj_auto in [ecalj package](https://github.com/tkotani/ecalj).
-Crystal structures are tiven in ecalj/ecalj_atuo/INPUT/gw1500.
-To reproduce the result, run jobgw1500.sh. (In advance, check ecalj_atuo/README.md. You need modify a little to fit to your system).
+We use ecalj_auto implemented in the ecalj/ecalj_auto in [ecalj package](https://github.com/tkotani/ecalj).
+Crystal structures are given in ecalj/ecalj_atuo/INPUT/gw1500.
+To reproduce the result, run jobgw1500.sh. (Please check ecalj_atuo/README.md. You need to modify a little to fit your system).
 
-* Note that our computational condition as for GW self-energy part is not large enough
+* Note that our computational condition for GW self-energy part is not large enough
 (4x4x4 level for self energy for Si. One-body self-consistency part is with 8x8x8). 
-* Crystal structures at Material project (MP) does not necessarily be
+* Crystal structures at the Material project (MP) do not necessarily be
 in good agreements with experiments. (For example, MP2534 gives a=5.75 $\AA$ for GaAs, while  a=5.65$\AA$ in
 experiments.). We found no band gap of VWN exchange correlation with a=5.75 $\AA$.
-* When 1shotQSGW and 2ndshowQSGW are rather different, Probably a little away from QSGW converged values.
+* When 1shotQSGW and 2ndshowQSGW are rather different, probably a little away from QSGW converged values.
 
 * Since PDOS used for our DOSnp paper is too huge. Ask us if necessary.
 
