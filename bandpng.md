@@ -1,4 +1,5 @@
 ## Comparison of LDA & QSGW with respect to band structure 
+(Placing png files in LDA and in QSGW side by side. But not correctly shown in github.)
 ### Table of contents 
  - [Band structure & total DOS](#band-structure--total-dos) 
  - [Jump links](#jump-links)
