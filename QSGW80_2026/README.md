@@ -1,6 +1,6 @@
 # GW1500 — QSGW80 band gaps, bands and DOS of 1546 materials (ecalj)
 
-Made 2026-10-03 14:06 by `gw1500db_build.py` (ecalj, `ecalj_auto`). An update of the 2025 database
+Made 2026-10-03 17:49 by `gw1500db_build.py` (ecalj, `ecalj_auto`). An update of the 2025 database
 [tkotani/DOSnpSupplement](https://github.com/tkotani/DOSnpSupplement) (1shot/2shot QSGW of 1516 materials, the supplement of arXiv:2507.19189):
 here every material is QSGW80 (scaledsigma = 0.8) iterated to convergence, the conditions of each value are written,
 and results of different conditions are compared.
@@ -37,16 +37,16 @@ D/I: direct or indirect gap along the band path of the figure (the gap value its
 (`path<mesh(mesh)`: the mesh misses the band extremum, so the true gap is nearer the path value; e.g. rocksalt SnS 0.79 on
 the mesh, 0.04 on the path, 0.08 in 2025). `· path 0 (semimetal?)`: the bands cross E_F on the path (graphite-like carbons).
 
-## Status (2026-10-03 14:06)
+## Status (2026-10-03 17:49)
 
 | adopted from | materials |
 | --- | --- |
-| N | 488 |
+| N | 565 |
 | R | 277 |
-| M | 780 |
+| M | 703 |
 | none | 1 |
 
-Database run (N) so far: 490 materials logged (CONVERGED 480, CONVERGED_METAL 8, FAIL(1) 1, TIMEOUT 1).
+Database run (N) so far: 567 materials logged (CONVERGED 557, CONVERGED_METAL 8, FAIL(1) 1, TIMEOUT 1).
 Order of the run: the materials with trouble in May first (SUSPECT_GOOD, MAY_WRONG, DRIFT_GOOD, UNKNOWN), then the
 FAILED/NOTCONV of May (reruns R exist) alternating with a random sample of the May GOOD (by number of atoms), and the
 two-atom GOOD on the second machine. The 16 materials with invalid or suspect structures were not run.
@@ -55,7 +55,7 @@ two-atom GOOD on the second machine. The 16 materials with invalid or suspect st
 
 | pair | materials | median | mean (first − second) | > 0.05 | > 0.2 | max |
 | --- | --- | --- | --- | --- | --- | --- |
-| N − M | 429 | 0.024 | +0.058 | 164 | 53 | 8.69 |
+| N − M | 506 | 0.024 | +0.051 | 186 | 56 | 8.69 |
 | N − R | 77 | 0.000 | +0.002 | 1 | 0 | 0.11 |
 | R − M | 19 | 0.253 | +0.641 | 14 | 11 | 8.69 |
 
@@ -66,13 +66,13 @@ differs from a run from scratch with the present code. For MgO (mp-1265, May 8.3
 `pb_lcutmx` and the precision of the present code were ruled out, and the ecalj of 2026-05-10 run from scratch on the May
 inputs in double precision gives 8.18 eV, iteration by iteration as the present code. The sigm of the first May iterations,
 read by that same lmf, gives gaps off by 0.05–0.26 eV already at iteration 1 (MgO, BeO, LiF, NaCl; CdS 0.01 eV), with signs
-changing from material to material and from iteration to iteration: the precision of the old all-TF32 `--mp`. Materials with both M and N so far: 429; |N − M| (eV):
+changing from material to material and from iteration to iteration: the precision of the old all-TF32 `--mp`. Materials with both M and N so far: 506; |N − M| (eV):
 
 | | < 0.02 | 0.02–0.05 | 0.05–0.1 | 0.1–0.2 | 0.2–0.5 | > 0.5 |
 | --- | --- | --- | --- | --- | --- | --- |
-| suspected in May, run first (category not GOOD, or far from 2025) | 26 | 19 | 24 | 17 | 27 | 16 |
-| others (random sample of the GOOD, all two-atom GOOD) | 169 | 51 | 41 | 29 | 10 | 0 |
-| all | 195 | 70 | 65 | 46 | 37 | 16 |
+| suspected in May, run first (category not GOOD, or far from 2025) | 28 | 20 | 24 | 17 | 27 | 16 |
+| others (random sample of the GOOD, all two-atom GOOD) | 204 | 68 | 54 | 35 | 13 | 0 |
+| all | 232 | 88 | 78 | 52 | 40 | 16 |
 
 So a May value (M) without a check by N carries an uncertainty of typically a few 10 meV, sometimes 0.2–0.5 eV, and in rare
 cases more (LiGaO₂ 4.75 → 6.18 eV, RbSrCO₃F 5.33 → 7.26 eV). The database run checked the materials with trouble in May
@@ -82,8 +82,8 @@ first, then those whose May value is far from the 2025 values, then a random sam
 
 | check | materials | meaning |
 | --- | --- | --- |
-| CHECK | 53 | QSGW80 results of different conditions differ by more than 0.2 eV |
-| differs | 113 | they differ by 0.05–0.2 eV |
+| CHECK | 56 | QSGW80 results of different conditions differ by more than 0.2 eV |
+| differs | 132 | they differ by 0.05–0.2 eV |
 | QSGW<LDA | 3 | the QSGW80 gap is smaller than the LDA gap by more than 0.05 eV |
 | path<mesh(mesh) | 54 | the gap along the band path is smaller than the gap on the k mesh of lmf by more than 0.1 eV, and in LDA by more than 0.05 eV: the 8x8x8 mesh misses the band extremum (the true gap is nearer the path value) |
 | path<mesh(noLDA) | 2 | the gap along the path is smaller than on the k mesh by more than 0.1 eV; no LDA bands to tell the mesh from Σ |
@@ -94,7 +94,7 @@ first, then those whose May value is far from the 2025 values, then a random sam
 | N:FAIL(1) | 1 | database run did not converge (FAIL(1)) |
 | N:TIMEOUT | 1 | database run did not converge (TIMEOUT) |
 
-### CHECK (53)
+### CHECK (56)
 
 | mpid | formula | LDA | QSGW80 | PBE (MP) | path gap | checks | category | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -105,9 +105,11 @@ first, then those whose May value is far from the 2025 values, then a random sam
 | [mp-1029](bands_3atoms.md#mp-1029) | BaF2 | 6.53 | **10.37** N / M 10.62 | 6.60 | 10.36 | CHECK | GOOD |  |
 | [mp-1018033](bands_4atoms.md#mp-1018033) | AgRhO2 | 0.57 | **1.77** N / M 1.56 · path 1.64 | 0.49 | 1.64 | CHECK path<mesh(mesh) | DRIFT_GOOD | 5 月は収束の基準を満たしたが、最後の 3 反復が同じ向きに +0.09 eV 動いていた（履歴 1.5928, 1.3423, 1.4710, 1.5570, 1.5574）。回し直していない |
 | [mp-1018096](bands_4atoms.md#mp-1018096) | Ba2NF | 0.91 | **2.36** N / M 2.11 | 1.08 | 2.36 | CHECK | GOOD |  |
+| [mp-2542](bands_4atoms.md#mp-2542) | Be2O2 | 7.66 | **10.76** N / M 10.96 | 7.46 | 10.76 | CHECK | GOOD |  |
 | [mp-23154](bands_4atoms.md#mp-23154) | Br4 | 1.21 | **3.51** N / M 3.72 | 1.35 | 3.50 | CHECK | GOOD |  |
 | [mp-672285](bands_4atoms.md#mp-672285) | CuCSN | 2.07 | **3.60** N / M 3.29 | 2.27 | 3.60 | CHECK | GOOD |  |
 | [mp-4280](bands_4atoms.md#mp-4280) | GaCuO2 | 1.01 | **2.59** N / M 2.08 | 0.78 | 2.59 | CHECK | GOOD |  |
+| [mp-8188](bands_4atoms.md#mp-8188) | KScO2 | 3.52 | **6.54** N / M 6.22 | 3.62 | 6.54 | CHECK | GOOD |  |
 | [mp-8409](bands_4atoms.md#mp-8409) | KYO2 | 3.89 | **6.48** N / M 6.05 | 3.97 | 6.48 | CHECK | GOOD |  |
 | [mp-1006888](bands_4atoms.md#mp-1006888) | KYS2 | 2.15 | **4.02** N / M 3.42 / R ≈ | 2.32 | 4.02 | CHECK | SUSPECT_GOOD | 5 月は GOOD だが 2 反復目以降に 0.5 eV を超えて振動（履歴 2.6872, 3.9244, 3.2604, 3.3863, 3.4772, 3.4245） / 回し直し(run3): CONVERGED 5 反復、ギャップ 4.019836 eV（LDA 2.1 |
 | [mp-8002](bands_4atoms.md#mp-8002) | LiGaO2 | 3.71 | **6.18** N / M 4.75 | 3.74 | 6.16 | CHECK | GOOD |  |
@@ -119,6 +121,7 @@ first, then those whose May value is far from the 2025 values, then a random sam
 | [mp-22003](bands_4atoms.md#mp-22003) | NaN3 | 3.91 | **7.31** N / M 5.83 / R ≈ | 4.03 | 7.31 | CHECK | SUSPECT_GOOD | 5 月は GOOD だが 2 反復目以降に 0.5 eV を超えて振動（履歴 6.9434, 5.3852, 6.2185, 5.8605, 5.9227, 5.8322） / 回し直し(run3): CONVERGED 5 反復、ギャップ 7.308540 eV（LDA 3.9 |
 | [mp-7914](bands_4atoms.md#mp-7914) | NaScO2 | 3.90 | **7.09** N / M 6.53 | 3.98 | 7.09 | CHECK | GOOD |  |
 | [mp-3056](bands_4atoms.md#mp-3056) | NaTlO2 | 0.64 | **1.98** N / M 1.47 / R ≈ | 0.62 | 1.98 | CHECK | SUSPECT_GOOD | 5 月は GOOD だが 2 反復目以降に 0.5 eV を超えて振動（履歴 2.0278, 0.5805, 1.4607, 1.4096, 1.4647） / 回し直し(run3): CONVERGED 6 反復、ギャップ 1.981450 eV（LDA 0.640949）、5 |
+| [mp-8145](bands_4atoms.md#mp-8145) | RbScO2 | 3.19 | **5.81** N / M 5.41 | 3.30 | 5.83 | CHECK | GOOD |  |
 | [mp-8176](bands_4atoms.md#mp-8176) | RbTlO2 | 0.87 | **2.17** N / M 1.80 | 0.85 | 2.17 | CHECK | GOOD |  |
 | [mp-999265](bands_4atoms.md#mp-999265) | RbYS2 | 2.13 | **3.93** N / M 3.57 | 2.31 | 3.93 | CHECK | GOOD |  |
 | [mp-973185](bands_4atoms.md#mp-973185) | ScAgO2 | 2.13 | **4.04** N / M 3.52 | 2.07 | 4.04 | CHECK | GOOD |  |
@@ -158,7 +161,7 @@ first, then those whose May value is far from the 2025 values, then a random sam
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [mp-169](bands_2atoms.md#mp-169) | C2 | 1.66 | **2.52** R · path 0 (semimetal?) | 0.20 |  | path-metal LDA≠PBE vs2025 | NOTCONV_MAY | 5 月は 10 反復で収束せず（最後の 3 反復の幅 0.1482 eV、履歴 2.3996, 3.5521, 2.9277, 2.7925, 2.9407） / 回し直し(run3): CONVERGED 4 反復、ギャップ 2.519014 eV（LDA 1.663932）、 |
 | [mp-1008505](bands_4atoms.md#mp-1008505) | Ba2Pd2 | 0.12 | **0.30** N / M ≈ · path 0 (semimetal?) | 0.00 |  | path-metal | GOOD |  |
-| [mp-2516584](bands_4atoms.md#mp-2516584) | C4 | 1.45 | **2.40** M · path 0 (semimetal?) | 1.43 |  | path-metal vs2025 | GOOD |  |
+| [mp-2516584](bands_4atoms.md#mp-2516584) | C4 | 1.45 | **2.48** N / M 2.40 · path 0 (semimetal?) | 1.43 |  | differs path-metal vs2025 | GOOD |  |
 | [mp-569304](bands_4atoms.md#mp-569304) | C4 | 1.85 | **3.68** R · path 0 (semimetal?) | 0.01 |  | path-metal LDA≠PBE vs2025 | INVALID_STRUCTURE | 硝酸を挿入した黒鉛（Graphite, nitrated）から N・O を除いたもの。密度 1.38（黒鉛 2.26）、層間が開いたまま / 回し直し(run3): CONVERGED 5 反復、ギャップ 3.677225 eV（LDA 1.848254）、5 月との差 -0.1 |
 | [mp-569416](bands_8atoms.md#mp-569416) | C8 | 1.80 | **4.97** M · path 0 (semimetal?) | 0.11 |  | path-metal LDA≠PBE vs2025 | INVALID_STRUCTURE | 硝酸を挿入した黒鉛から N・O を除いたもの。密度 1.67（黒鉛 2.26） |
 
@@ -193,18 +196,18 @@ first, then those whose May value is far from the 2025 values, then a random sam
 | [mp-1018033](bands_4atoms.md#mp-1018033) | AgRhO2 | 0.57 | **1.77** N / M 1.56 · path 1.64 | 0.49 | 1.64 | CHECK path<mesh(mesh) | DRIFT_GOOD | 5 月は収束の基準を満たしたが、最後の 3 反復が同じ向きに +0.09 eV 動いていた（履歴 1.5928, 1.3423, 1.4710, 1.5570, 1.5574）。回し直していない |
 | [mp-2793](bands_4atoms.md#mp-2793) | Au2Se2 | 0.14 | **0.64** N / M ≈ · path 0.54 | 0.26 | 0.54 | path<mesh(mesh) | GOOD |  |
 | [mp-2653](bands_4atoms.md#mp-2653) | B2N2 | 5.38 | **7.50** N / M ≈ · path 7.16 | 5.20 | 7.16 | path<mesh(mesh) | GOOD |  |
-| [mp-7991](bands_4atoms.md#mp-7991) | B2N2 | 3.80 | **6.54** M · path 6.30 | 4.27 | 6.30 | path<mesh(mesh) vs2025 | GOOD |  |
-| [mp-984](bands_4atoms.md#mp-984) | B2N2 | 4.33 | **6.54** M · path 6.41 | 4.48 | 6.41 | path<mesh(mesh) vs2025 | GOOD |  |
+| [mp-7991](bands_4atoms.md#mp-7991) | B2N2 | 3.80 | **6.53** N / M ≈ · path 6.29 | 4.27 | 6.29 | path<mesh(mesh) vs2025 | GOOD |  |
+| [mp-984](bands_4atoms.md#mp-984) | B2N2 | 4.33 | **6.56** N / M ≈ · path 6.43 | 4.48 | 6.43 | path<mesh(mesh) vs2025 | GOOD |  |
 | [mp-1008559](bands_4atoms.md#mp-1008559) | B2P2 | 1.13 | **1.96** N / M ≈ · path 1.75 | 1.08 | 1.75 | path<mesh(mesh) | GOOD |  |
 | [mp-23301](bands_4atoms.md#mp-23301) | BiF3 | 3.99 | **6.41** N / M ≈ · path 6.30 | 3.95 | 6.30 | path<mesh(mesh) | GOOD |  |
 | [mp-47](bands_4atoms.md#mp-47) | C4 | 3.58 | **5.23** N / M ≈ · path 4.84 | 3.34 | 4.84 | path<mesh(mesh) vs2025 | GOOD |  |
-| [mp-29643](bands_4atoms.md#mp-29643) | CuAsSe2 | 0.66 | **0.95** M · path 0.53 | 0.32 | 0.53 | path<mesh(mesh) | GOOD |  |
+| [mp-29643](bands_4atoms.md#mp-29643) | CuAsSe2 | 0.66 | **0.94** N / M ≈ · path 0.52 | 0.32 | 0.52 | path<mesh(mesh) | GOOD |  |
 | [mp-23177](bands_4atoms.md#mp-23177) | Hg2Br2 | 2.02 | **3.60** N / M ≈ · path 3.50 | 2.26 | 3.50 | path<mesh(mesh) | GOOD |  |
 | [mp-20526](bands_4atoms.md#mp-20526) | Pb2S2 | 1.74 | **3.24** M · path 3.13 | 1.70 | 3.13 | path<mesh(mesh) | SUSPECT_STRUCTURE | PbS。a=4.22、c=11.3 Å、1 原子 50.2 Å³、配位 4。非整合層状化合物の PbS 層と同じ形 |
 | [mp-727323](bands_4atoms.md#mp-727323) | Pb2S2 | 1.73 | **3.23** M · path 3.12 | 1.65 | 3.12 | path<mesh(mesh) | INVALID_STRUCTURE | Pb–Ti–S の非整合層状化合物の「Pb S-part」。a=4.22、c=11.2 Å、1 原子 49.7 Å³（岩塩型 PbS 26.7） |
 | [mp-22009](bands_4atoms.md#mp-22009) | Pb2Se2 | 1.46 | **2.93** M · path 2.71 | 1.30 | 2.71 | path<mesh(mesh) | SUSPECT_STRUCTURE | PbSe。1 原子 58.5 Å³、配位 5（岩塩型 PbSe は約 29.5、配位 6）。層状化合物の副格子と見られる |
 | [mp-7140](bands_4atoms.md#mp-7140) | Si2C2 | 2.44 | **3.53** M · path 3.26 | 2.30 | 3.26 | path<mesh(mesh) | GOOD |  |
-| [mp-557835](bands_4atoms.md#mp-557835) | Tl2F2 | 2.96 | **4.72** M · path 4.58 | 2.99 | 4.58 | path<mesh(mesh) | GOOD |  |
+| [mp-557835](bands_4atoms.md#mp-557835) | Tl2F2 | 2.96 | **4.76** N / M ≈ · path 4.61 | 2.99 | 4.61 | path<mesh(mesh) | GOOD |  |
 | [mp-1017567](bands_5atoms.md#mp-1017567) | Hf2SN2 | 0.94 | **2.08** M · path 1.87 | 0.89 | 1.87 | path<mesh(mesh) | GOOD |  |
 | [mp-865185](bands_5atoms.md#mp-865185) | MgBe2As2 | 0.57 | **1.38** M · path 1.16 | 0.40 | 1.16 | path<mesh(mesh) | GOOD |  |
 | [mp-1017628](bands_5atoms.md#mp-1017628) | MgBe2P2 | 0.76 | **1.74** M · path 1.52 | 0.63 | 1.52 | path<mesh(mesh) | GOOD |  |
