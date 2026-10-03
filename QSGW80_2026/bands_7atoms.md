@@ -110,7 +110,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-550751.png" width="70%">
 
 <a id="mp-1077866"></a>
-**mp-1077866** BaZnBO3F — QSGW80 **6.35** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-1077866** BaZnBO3F — QSGW80 **6.34** N / M ≈ eV I  — ecalj 989a18637 (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-1077866.png" width="70%">
 
@@ -160,7 +160,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-29342.png" width="70%">
 
 <a id="mp-8789"></a>
-**mp-8789** Ca4As2O — QSGW80 **2.50** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-8789** Ca4As2O — QSGW80 **2.45** N / M 2.50 eV I differs — ecalj 989a18637 (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-8789.png" width="70%">
 
@@ -390,7 +390,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-9583.png" width="70%">
 
 <a id="mp-29584"></a>
-**mp-29584** K4BeAs2 — QSGW80 **2.04** M eV D  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-29584** K4BeAs2 — QSGW80 **1.99** N / M 2.04 eV I differs — ecalj 989a18637 (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-29584.png" width="70%">
 
@@ -570,7 +570,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-31002.png" width="70%">
 
 <a id="mp-1077942"></a>
-**mp-1077942** Rb2TeSe4 — QSGW80 **2.04** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-1077942** Rb2TeSe4 — QSGW80 **2.02** N / M ≈ eV I  — ecalj 989a18637 (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-1077942.png" width="70%">
 

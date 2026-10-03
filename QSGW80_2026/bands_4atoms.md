@@ -55,7 +55,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-661.png" width="70%">
 
 <a id="mp-7885"></a>
-**mp-7885** AlAgS2 — QSGW80 **2.87** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-7885** AlAgS2 — QSGW80 **2.87** N / M ≈ eV I  — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-7885.png" width="70%">
 
@@ -70,7 +70,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-8039.png" width="70%">
 
 <a id="mp-2793"></a>
-**mp-2793** Au2Se2 — QSGW80 **0.63** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-2793** Au2Se2 — QSGW80 **0.64** N / M ≈ · path 0.54 eV I path<mesh(mesh) — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-2793.png" width="70%">
 
@@ -100,7 +100,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-1018098.png" width="70%">
 
 <a id="mp-1018099"></a>
-**mp-1018099** Ba2NCl — QSGW80 **2.22** M eV D  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-1018099** Ba2NCl — QSGW80 **2.36** N / M 2.22 eV D differs — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-1018099.png" width="70%">
 
@@ -137,7 +137,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-1207108.png" width="70%">
 
 <a id="mp-571093"></a>
-**mp-571093** BaAlSiH — QSGW80 **1.34** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-571093** BaAlSiH — QSGW80 **1.33** N / M ≈ eV I  — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-571093.png" width="70%">
 
@@ -147,7 +147,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-1018095.png" width="70%">
 
 <a id="mp-1018094"></a>
-**mp-1018094** BaGaSnH — QSGW80 **0.57** M eV D  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-1018094** BaGaSnH — QSGW80 **0.66** N / M 0.57 eV D differs — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-1018094.png" width="70%">
 
@@ -433,7 +433,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-23153.png" width="70%">
 
 <a id="mp-22870"></a>
-**mp-22870** In2Br2 — QSGW80 **2.03** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-22870** In2Br2 — QSGW80 **1.99** N / M ≈ eV I  — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-22870.png" width="70%">
 
@@ -682,7 +682,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-570747.png" width="70%">
 
 <a id="mp-672233"></a>
-**mp-672233** N4 — QSGW80 **13.72** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-672233** N4 — QSGW80 **13.50** N / M 13.72 eV I CHECK — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-672233.png" width="70%">
 
@@ -697,7 +697,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-723629.png" width="70%">
 
 <a id="mp-8860"></a>
-**mp-8860** Na3As — QSGW80 **1.15** M eV D  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-8860** Na3As — QSGW80 **1.21** N / M 1.15 eV D differs — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-8860.png" width="70%">
 
@@ -967,7 +967,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-29803.png" width="70%">
 
 <a id="mp-165"></a>
-**mp-165** Si4 — QSGW80 **0.98** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-165** Si4 — QSGW80 **0.97** N / M ≈ eV I  — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-165.png" width="70%">
 
@@ -992,7 +992,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-554134.png" width="70%">
 
 <a id="mp-559676"></a>
-**mp-559676** Sn2S2 — QSGW80 **0.85** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-559676** Sn2S2 — QSGW80 **0.83** N / M ≈ eV I  — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-559676.png" width="70%">
 
@@ -1007,7 +1007,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-8781.png" width="70%">
 
 <a id="mp-2168"></a>
-**mp-2168** Sn2Se2 — QSGW80 **0.64** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-2168** Sn2Se2 — QSGW80 **0.64** N / M ≈ eV I  — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-2168.png" width="70%">
 
@@ -1097,7 +1097,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-557835.png" width="70%">
 
 <a id="mp-22858"></a>
-**mp-22858** Tl2I2 — QSGW80 **3.18** M eV D  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-22858** Tl2I2 — QSGW80 **3.19** N / M ≈ eV D  — ecalj b695fa65c (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-22858.png" width="70%">
 

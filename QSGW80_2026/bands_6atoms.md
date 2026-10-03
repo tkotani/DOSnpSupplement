@@ -465,7 +465,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-361.png" width="70%">
 
 <a id="mp-2008"></a>
-**mp-2008** Fe2As4 — QSGW80 **0.42** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-2008** Fe2As4 — QSGW80 **0.42** N / M ≈ eV I  — ecalj 989a18637 (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-2008.png" width="70%">
 
@@ -905,7 +905,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-634657.png" width="70%">
 
 <a id="mp-8452"></a>
-**mp-8452** Na2Li2S2 — QSGW80 **5.17** M eV D  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-8452** Na2Li2S2 — QSGW80 **5.14** N / M ≈ eV D  — ecalj 989a18637 (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-8452.png" width="70%">
 
@@ -915,7 +915,7 @@ Gray: LDA. Red: QSGW80 adopted (condition in parentheses). Blue dashed: another 
 <img src="fig/mp-5962.png" width="70%">
 
 <a id="mp-7090"></a>
-**mp-7090** Na2Mg2Sb2 — QSGW80 **1.95** M eV I  — ecalj 2026-04/05 (~/bin2, all-TF32 --mp)
+**mp-7090** Na2Mg2Sb2 — QSGW80 **1.95** N / M ≈ eV I  — ecalj 989a18637 (tf32, t_tetrakbt -300)
 
 <img src="fig/mp-7090.png" width="70%">
 

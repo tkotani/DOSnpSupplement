@@ -1,17 +1,17 @@
 {
  "adopt": {
   "R": 277,
-  "N": 465,
-  "M": 803,
+  "N": 488,
+  "M": 780,
   "none": 1
  },
  "flag": {
   "vs2025": 25,
-  "differs": 107,
-  "CHECK": 52,
+  "differs": 113,
+  "CHECK": 53,
   "path-metal": 5,
   "LDA\u2260PBE": 6,
-  "path<mesh(mesh)": 53,
+  "path<mesh(mesh)": 54,
   "N:FAIL(1)": 1,
   "QSGW<LDA": 3,
   "path<mesh(noLDA)": 2,
@@ -19,5 +19,5 @@
   "no-result": 1
  },
  "n": 1546,
- "db_logged": 467
+ "db_logged": 490
 }
