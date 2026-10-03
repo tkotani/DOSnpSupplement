@@ -1,3 +1,5 @@
+**New (2026): [QSGW80 band gaps, bands and DOS of 1546 materials, iterated to convergence](QSGW80_2026/README.md)** — the GW1500 database of ecalj; the 2025 tables below are kept as the supplement of arXiv:2507.19189.
+
 # Dataset of band gaps in QSGW
 
 We use ecalj_auto implemented in the ecalj/ecalj_auto in [ecalj package](https://github.com/tkotani/ecalj).
