@@ -1,5 +1,8 @@
 # DOSnpSupplement — band gaps of the GW1500 materials by ecalj
 
+**Bands and DOS of the newest version (QSGW80_20261007), by the number of atoms in the cell:** [1 atoms](QSGW80_20261007/bands_1atoms.md), [2 atoms](QSGW80_20261007/bands_2atoms.md), [3 atoms](QSGW80_20261007/bands_3atoms.md), [4 atoms](QSGW80_20261007/bands_4atoms.md), [5 atoms](QSGW80_20261007/bands_5atoms.md), [6 atoms](QSGW80_20261007/bands_6atoms.md), [7 atoms](QSGW80_20261007/bands_7atoms.md), [8 atoms](QSGW80_20261007/bands_8atoms.md).
+Gaps of all materials: [QSGW80_20261007/table.md](QSGW80_20261007/table.md).
+
 Databases of band gaps, band structures and DOS of about 1500 nonmagnetic materials of the Materials Project, computed with
 [ecalj](https://github.com/tkotani/ecalj) (QSGW, LDA, MLO models). Each database has its own cover page with the conditions,
 the version of ecalj of every value, and the checks. The newest is in the tree; an earlier version is kept as a git tag, with
