@@ -1,0 +1,8 @@
+mpid	formula	natom	why
+mp-1056418	Sr	1	skipped: TOO_LARGE (the QSGW80 value is kept, no MLO model)
+mp-685145	BN	2	MLO FAIR (max 0.24 eV, b2all)
+mp-632291	H2	2	MLO FAIR (max 0.11 eV, x_s_only)
+mp-561320	Pb2S2	4	RUNNING since 2026-10-07 18:24 (kt1): QSGW80 again with ES outside the slab surfaces and one at the vacuum centre (limit 8 h); the values shown are of the earlier run with ES outside the surfaces only (MLO 0.46 eV)
+mp-554134	Sn2S2	4	MLO FAIR (max 0.24 eV, b2all)
+mp-730101	H8	8	MLO FAIR (max 0.15 eV, b2)
+mp-1179832	Rb8	8	not computed: TOO_LARGE (the cell is too large for the present runs)

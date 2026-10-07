@@ -1,0 +1,3 @@
+mp-3614: input of the database run N (2026-10-02..07); ecalj 989a18637 (tf32, t_tetrakbt -300); host kt1
+ctrlg.<mpid>.toml is the input as it was at the end of the run (gwsc may have set keys such as readp);
+syml.<mpid> is the band path of the figure. See README.md, "Files for reproducing".

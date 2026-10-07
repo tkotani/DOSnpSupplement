@@ -1,0 +1,3 @@
+mp-8289: input of the run with empty spheres E (2026-10-05..07); ecalj 0601771b4 (tf32, t_tetrakbt -300) with ES, ES rule es-c; host kt1es
+ctrlg.<mpid>.toml is the input as it was at the end of the run (gwsc may have set keys such as readp);
+syml.<mpid> is the band path of the figure. See README.md, "Files for reproducing".
