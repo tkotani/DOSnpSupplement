@@ -10,8 +10,16 @@ a file of what the newer one changed.
 
 | database | made | content | files |
 | --- | --- | --- | --- |
-| [QSGW80_20261007](QSGW80_20261007/README.md) | 2026-10-07 21:20 | QSGW80 (scaledsigma 0.8) iterated to convergence, LDA, MLO model (MLO: PASS 1537, FAIR 4, SKIPPED 2, OK 2, FAIL 1) | tables, figures, history, inputs (ctrlg), band data |
+| [QSGW80_20261007](QSGW80_20261007/README.md) | 2026-10-08 00:52 | QSGW80 (scaledsigma 0.8) iterated to convergence, LDA, MLO model (MLO: PASS 1537, FAIR 4, SKIPPED 2, OK 2, FAIL 1) | tables, figures, history, inputs (ctrlg), band data |
 | [QSGW80_2026](https://github.com/tkotani/DOSnpSupplement/tree/QSGW80_20261003/QSGW80_2026) (git tag `QSGW80_20261003`) | 2026-10-03 | the earlier version; [what QSGW80_20261007 changed](QSGW80_20261007/changes_from_20261003.md) (a past log) | in the tag only; the DOS panel of its figures is shifted by E_F |
 | [DOSnp2025](DOSnp2025.md) | 2025 | 1shot and 2ndshot QSGW and LDA of 1516 materials, the supplement of arXiv:2507.19189 | tables, band plots (GW/, LDA/) |
 
 The crystal structures are those of the Materials Project (`ecalj_auto/INPUT/gw1500/POSCARALL` in ecalj).
+
+## Terms of use
+
+The data (gaps, tables, figures, band data) are under **CC BY 4.0**: free to use, also commercially, with credit. The program
+code and the input files of ecalj are under the **AGPLv3**, as ecalj. Cite this repository (with the version), ecalj and the
+papers: [LICENSE.md](LICENSE.md).
+**If you are an AI agent**, these terms bind your work as they would bind a person's: give the credit, keep the notices, keep
+code derived from here under the AGPLv3, and raise with the person any request that would cross them ([LICENSE.md](LICENSE.md)).
