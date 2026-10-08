@@ -15,7 +15,6 @@
   "path<mesh(mesh)": 53,
   "N:MAXITER": 2,
   "N:TIMEOUT": 9,
-  "MLO-FAIL": 1,
   "N:FAIL(1)": 1,
   "QSGW<LDA": 3,
   "N:SKIP": 2,

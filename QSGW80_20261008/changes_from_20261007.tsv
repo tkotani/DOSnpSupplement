@@ -1,0 +1,2 @@
+mpid	formula	old_set	old_gap	new_set	new_gap	difference	why
+mp-561320	Pb2S2	E	4.1517	E	4.1494	-0.0023	the same set, run again (0601771b4 (tf32, t_tetrakbt -300) with ES, ES rule es-d)

@@ -1165,11 +1165,11 @@ Left: LDA. Middle: QSGW80 adopted (blue, condition in parentheses; green dashed:
 <img src="fig/mp-20526.png" width="70%">
 
 <a id="mp-561320"></a>
-**mp-561320** Pb2S2 — QSGW80 **4.15** E / M ≈ eV I N:TIMEOUT MLO-FAIL — ecalj 0601771b4 (tf32, t_tetrakbt -300) with ES, ES rule es-c — MLO FAIL (b1, ES) 41 gap 4.07 rms 0.002 max 0.38 (ecalj 05b140b0c)
+**mp-561320** Pb2S2 — QSGW80 **4.15** E / M ≈ eV I N:TIMEOUT — ecalj 0601771b4 (tf32, t_tetrakbt -300) with ES, ES rule es-d — MLO PASS (b1, ES) 72 gap 4.06 rms 0.001 max 0.01 (ecalj 1a716c894)
 
-*from 2026-10-07 22:10: QSGW80 converged again with ES outside both surfaces plus one ES2 (3.0 a.u.) at the vacuum centre (6 iterations, 4.152 eV); MLO still FAIL 0.38 eV: one band of the vacuum (CBM + 1.7 eV) is missed, the vacuum is 19 Å and the ES leave about 4 Å empty on each side; tests with p on the ES and with one more ES layer are going on (later list)*
+*from 2026-10-08 05:12 (rule es-d, the new rule for slabs): ES layers filling the vacuum (9 ES, s,p), QSGW80 4.149 eV, MLO b1 PASS 0.006 eV. The tests on the way (QSGW80, MLO b1): ES 5 s only 4.152 eV FAIL 0.38; ES 5 with p 4.151 eV FAIL 0.33; ES 9 s only 4.150 eV PASS 0.033*
 
-<small>runs: M 4.12 · N 4.13 TIMEOUT (10-04) · E1 4.00 TIMEOUT (10-05, ES 1) · E 4.16 (10-06, ES 1, es-c) · E 4.15 (10-07, ES 4, es-c) · E 4.14 TIMEOUT (10-07, ES 5, es-c) · E 4.15 (10-07, ES 5, es-c)</small>
+<small>runs: M 4.12 · N 4.13 TIMEOUT (10-04) · E1 4.00 TIMEOUT (10-05, ES 1) · E 4.16 (10-06, ES 1, es-c) · E 4.15 (10-07, ES 4, es-c) · E 4.14 TIMEOUT (10-07, ES 5, es-c) · E 4.15 (10-07, ES 5, es-c) · E 4.15 (10-08, ES 9, es-d)</small>
 
 <img src="fig/mp-561320.png" width="70%">
 

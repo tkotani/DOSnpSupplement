@@ -2,7 +2,6 @@ mpid	formula	natom	why
 mp-1056418	Sr	1	skipped: TOO_LARGE (the QSGW80 value is kept, no MLO model)
 mp-685145	BN	2	MLO FAIR (max 0.24 eV, b2all)
 mp-632291	H2	2	MLO FAIR (max 0.11 eV, x_s_only)
-mp-561320	Pb2S2	4	MLO FAIL (max 0.38 eV, b1)
 mp-554134	Sn2S2	4	MLO FAIR (max 0.24 eV, b2all)
 mp-730101	H8	8	MLO FAIR (max 0.15 eV, b2)
 mp-1179832	Rb8	8	not computed: TOO_LARGE (the cell is too large for the present runs)
