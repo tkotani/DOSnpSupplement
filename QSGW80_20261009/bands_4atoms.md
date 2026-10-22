@@ -1379,11 +1379,11 @@ Left: LDA. Middle: QSGW80 adopted (blue, condition in parentheses; green dashed:
 <img src="fig/mp-1379.png" width="70%">
 
 <a id="mp-554134"></a>
-**mp-554134** Sn2S2 — QSGW80 **3.99** E / R ≈ eV I  — ecalj 0601771b4 (tf32, t_tetrakbt -300) with ES, ES rule es-c — MLO FAIR (b2all, ES) 58 gap 4.01 rms 0.004 max 0.24 (ecalj 26b32d5d5)
+**mp-554134** Sn2S2 — QSGW80 **3.99** E / R ≈ eV I  — ecalj 0601771b4 (tf32, t_tetrakbt -300) with ES, ES rule es-d — MLO PASS (b1, ES) 92 gap 4.01 rms 0.001 max 0.01 (ecalj 89de02ff9)
 
-*from 2026-10-07 15:16: ES outside both surfaces plus two ES2 (2.65 a.u.) at the vacuum centre*
+*from 2026-10-09 07:45 (rule es-d): two ES layers (1.9 a.u.) on each side between the surface ES and the centre, 14 ES, s,p; QSGW80 3.990 eV, MLO b1 PASS 0.007 eV (before: FAIR 0.24 with ES outside the surfaces and at the centre, s only)*
 
-<small>runs: M 3.78 · R 4.00 (10-01) · E1 FAIL(1) FAIL(1) (10-05, ES 1) · E FAIL(1) FAIL(1) (10-05, ES 1, es-a) · E FAIL(1) FAIL(1) (10-06, ES 2, es-a) · E 4.00 (10-06, ES 2, es-c) · E 3.99 (10-07, ES 4, es-c) · E 3.99 (10-07, ES 6, es-c)</small>
+<small>runs: M 3.78 · R 4.00 (10-01) · E1 FAIL(1) FAIL(1) (10-05, ES 1) · E FAIL(1) FAIL(1) (10-05, ES 1, es-a) · E FAIL(1) FAIL(1) (10-06, ES 2, es-a) · E 4.00 (10-06, ES 2, es-c) · E 3.99 (10-07, ES 4, es-c) · E 3.99 (10-07, ES 6, es-c) · E 3.99 (10-09, ES 14, es-d)</small>
 
 <img src="fig/mp-554134.png" width="70%">
 

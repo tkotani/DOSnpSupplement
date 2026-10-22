@@ -77,6 +77,8 @@ Left: LDA. Middle: QSGW80 adopted (blue, condition in parentheses; green dashed:
 <a id="mp-685145"></a>
 **mp-685145** BN — QSGW80 **5.95** E / M 5.87 / N ≈ eV I differs — ecalj 0601771b4 (tf32, t_tetrakbt -300) with ES, ES rule es-c — MLO FAIR (b2all, ES) 16 gap 5.89 rms 0.058 max 0.24 (ecalj c9932cbfc)
 
+*2026-10-09: tried two small ES (1.25 a.u., s,p) in the voids of 2.56 a.u. between the sheets: QSGW80 5.839 eV and MLO 0.55-0.76 eV (worse, in the valence band); the run without ES (FAIR 0.24) is kept*
+
 <small>runs: M 5.87 · N 5.96 (10-03) · E 5.95 (10-06, ES 0, es-c)</small>
 
 <img src="fig/mp-685145.png" width="70%">

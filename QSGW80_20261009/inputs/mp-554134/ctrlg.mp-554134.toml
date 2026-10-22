@@ -63,6 +63,38 @@ pos  = [2.89225808, 0.00000000, 0.00000000]
 [[site]]   # ES2 at the centre of the vacuum (by hand 2026-10-07)
 atom = "E2"
 pos  = [5.78451616, 0.00000000, 22.42882656]
+# ----------------------------------------------------------------
+[[site]]   # ES layer between the surface ES and the vacuum centre (rule es-d, gw1500_es_slab_layers.py)
+atom = "E3"
+pos  = [1.44612904, 0.35053519, 4.80858147]
+# ----------------------------------------------------------------
+[[site]]   # ES layer between the surface ES and the vacuum centre (rule es-d, gw1500_es_slab_layers.py)
+atom = "E3"
+pos  = [1.44612904, 0.35053519, 2.40429073]
+# ----------------------------------------------------------------
+[[site]]   # ES layer between the surface ES and the vacuum centre (rule es-d, gw1500_es_slab_layers.py)
+atom = "E3"
+pos  = [4.33838712, 0.35053519, 17.62024509]
+# ----------------------------------------------------------------
+[[site]]   # ES layer between the surface ES and the vacuum centre (rule es-d, gw1500_es_slab_layers.py)
+atom = "E3"
+pos  = [4.33838712, 0.35053519, 20.02453583]
+# ----------------------------------------------------------------
+[[site]]   # ES layer between the surface ES and the vacuum centre (rule es-d, gw1500_es_slab_layers.py)
+atom = "E3"
+pos  = [4.33838712, -0.55124428, 5.06067385]
+# ----------------------------------------------------------------
+[[site]]   # ES layer between the surface ES and the vacuum centre (rule es-d, gw1500_es_slab_layers.py)
+atom = "E3"
+pos  = [4.33838712, -0.55124428, 2.53033693]
+# ----------------------------------------------------------------
+[[site]]   # ES layer between the surface ES and the vacuum centre (rule es-d, gw1500_es_slab_layers.py)
+atom = "E3"
+pos  = [1.44612904, -0.55124428, 17.36815271]
+# ----------------------------------------------------------------
+[[site]]   # ES layer between the surface ES and the vacuum centre (rule es-d, gw1500_es_slab_layers.py)
+atom = "E3"
+pos  = [1.44612904, -0.55124428, 19.89848963]
 
 # === SPEC: per-species parameters ===
 # Touch mainly mmom (initial magnetic moment, NSPIN=2),
@@ -99,18 +131,27 @@ nmcore = 1
 atom   = "E"
 z      = 0
 r      = 1.90
-lmx    = 0
+lmx    = 1
 lmxa   = 2
-rsmh   = [0.950]
-eh     = [-0.3]
+rsmh   = [0.950, 0.950]
+eh     = [-0.3, -0.3]
 [[spec]]   # empty sphere E2 (by hand 2026-10-07: 2.65 a.u., s)
 atom   = "E2"
 z      = 0
 r      = 2.65
-lmx    = 0
+lmx    = 1
 lmxa   = 2
-rsmh   = [1.325]
-eh     = [-0.3]
+rsmh   = [1.325, 1.325]
+eh     = [-0.3, -0.3]
+# ----------------------------------------------------------------
+[[spec]]   # ES layer (rule es-d)
+atom   = "E3"
+z      = 0
+r      = 1.90
+lmx    = 1
+lmxa   = 2
+rsmh   = [0.950, 0.950]
+eh     = [-0.3, -0.3]
 
 # === BZ: Brillouin-zone integration ===
 # nkabc = k-mesh divisions (1 entry -> isotropic, 3 entries -> per axis).
@@ -296,6 +337,14 @@ mlo_lm = """
 8 E   1 2 3 4
 9 E2   1 2 3 4
 10 E2   1 2 3 4
+11 E3   1 2 3 4
+12 E3   1 2 3 4
+13 E3   1 2 3 4
+14 E3   1 2 3 4
+15 E3   1 2 3 4
+16 E3   1 2 3 4
+17 E3   1 2 3 4
+18 E3   1 2 3 4
 """
 # ----------------------------------------------------------------
 mlo_lm2 = """
@@ -319,7 +368,7 @@ pb_tolerance = [1e-3]                      # drop linearly-dep products below th
 # ----------------------------------------------------------------
 # lcutmx(atom): max l-cutoff for the product basis per atom.
 # Use 4 for atoms with valence d (Ni, Ga, etc.), 6 for f.
-pb_lcutmx    = [4, 4, 4, 4, 2, 2, 2, 2, 2, 2]  # max l-cutoff per atom (4 for d-valence, 6 for f)
+pb_lcutmx    = [4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]  # max l-cutoff per atom (4 for d-valence, 6 for f)
 # ----------------------------------------------------------------
 # nlx [iatom, l, nnvv, nnc]: one row per (iatom, l). iatom = site index in
 #   [[site]] order (lmchk prints it). nnvv = radial functions for valence at
@@ -364,6 +413,30 @@ nlx = [
   [10, 0, 2, 0],
   [10, 1, 2, 0],
   [10, 2, 2, 0],
+  [11, 0, 2, 0],
+  [11, 1, 2, 0],
+  [11, 2, 2, 0],
+  [12, 0, 2, 0],
+  [12, 1, 2, 0],
+  [12, 2, 2, 0],
+  [13, 0, 2, 0],
+  [13, 1, 2, 0],
+  [13, 2, 2, 0],
+  [14, 0, 2, 0],
+  [14, 1, 2, 0],
+  [14, 2, 2, 0],
+  [15, 0, 2, 0],
+  [15, 1, 2, 0],
+  [15, 2, 2, 0],
+  [16, 0, 2, 0],
+  [16, 1, 2, 0],
+  [16, 2, 2, 0],
+  [17, 0, 2, 0],
+  [17, 1, 2, 0],
+  [17, 2, 2, 0],
+  [18, 0, 2, 0],
+  [18, 1, 2, 0],
+  [18, 2, 2, 0],
 ]
 # ----------------------------------------------------------------
 # valence [iatom, l, n, occ, unocc]: one row per valence radial function.
@@ -450,6 +523,54 @@ valence = [
   [10, 1, 2, 0, 0],   # 2p_phidot
   [10, 2, 1, 0, 1],   # 3d_phi
   [10, 2, 2, 0, 0],   # 3d_phidot
+  [11, 0, 1, 0, 1],   # 1s_phi
+  [11, 0, 2, 0, 0],   # 1s_phidot
+  [11, 1, 1, 0, 1],   # 2p_phi
+  [11, 1, 2, 0, 0],   # 2p_phidot
+  [11, 2, 1, 0, 1],   # 3d_phi
+  [11, 2, 2, 0, 0],   # 3d_phidot
+  [12, 0, 1, 0, 1],   # 1s_phi
+  [12, 0, 2, 0, 0],   # 1s_phidot
+  [12, 1, 1, 0, 1],   # 2p_phi
+  [12, 1, 2, 0, 0],   # 2p_phidot
+  [12, 2, 1, 0, 1],   # 3d_phi
+  [12, 2, 2, 0, 0],   # 3d_phidot
+  [13, 0, 1, 0, 1],   # 1s_phi
+  [13, 0, 2, 0, 0],   # 1s_phidot
+  [13, 1, 1, 0, 1],   # 2p_phi
+  [13, 1, 2, 0, 0],   # 2p_phidot
+  [13, 2, 1, 0, 1],   # 3d_phi
+  [13, 2, 2, 0, 0],   # 3d_phidot
+  [14, 0, 1, 0, 1],   # 1s_phi
+  [14, 0, 2, 0, 0],   # 1s_phidot
+  [14, 1, 1, 0, 1],   # 2p_phi
+  [14, 1, 2, 0, 0],   # 2p_phidot
+  [14, 2, 1, 0, 1],   # 3d_phi
+  [14, 2, 2, 0, 0],   # 3d_phidot
+  [15, 0, 1, 0, 1],   # 1s_phi
+  [15, 0, 2, 0, 0],   # 1s_phidot
+  [15, 1, 1, 0, 1],   # 2p_phi
+  [15, 1, 2, 0, 0],   # 2p_phidot
+  [15, 2, 1, 0, 1],   # 3d_phi
+  [15, 2, 2, 0, 0],   # 3d_phidot
+  [16, 0, 1, 0, 1],   # 1s_phi
+  [16, 0, 2, 0, 0],   # 1s_phidot
+  [16, 1, 1, 0, 1],   # 2p_phi
+  [16, 1, 2, 0, 0],   # 2p_phidot
+  [16, 2, 1, 0, 1],   # 3d_phi
+  [16, 2, 2, 0, 0],   # 3d_phidot
+  [17, 0, 1, 0, 1],   # 1s_phi
+  [17, 0, 2, 0, 0],   # 1s_phidot
+  [17, 1, 1, 0, 1],   # 2p_phi
+  [17, 1, 2, 0, 0],   # 2p_phidot
+  [17, 2, 1, 0, 1],   # 3d_phi
+  [17, 2, 2, 0, 0],   # 3d_phidot
+  [18, 0, 1, 0, 1],   # 1s_phi
+  [18, 0, 2, 0, 0],   # 1s_phidot
+  [18, 1, 1, 0, 1],   # 2p_phi
+  [18, 1, 2, 0, 0],   # 2p_phidot
+  [18, 2, 1, 0, 1],   # 3d_phi
+  [18, 2, 2, 0, 0],   # 3d_phidot
 ]
 # ----------------------------------------------------------------
 # core [iatom, l, n, occ, unocc, forX0, forSxc]: one row per core level.

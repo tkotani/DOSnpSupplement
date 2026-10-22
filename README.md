@@ -1,18 +1,19 @@
 # DOSnpSupplement — band gaps of the GW1500 materials by ecalj
 
-**Bands and DOS of the newest version (QSGW80_20261008), by the number of atoms in the cell:** [1 atoms](QSGW80_20261008/bands_1atoms.md), [2 atoms](QSGW80_20261008/bands_2atoms.md), [3 atoms](QSGW80_20261008/bands_3atoms.md), [4 atoms](QSGW80_20261008/bands_4atoms.md), [5 atoms](QSGW80_20261008/bands_5atoms.md), [6 atoms](QSGW80_20261008/bands_6atoms.md), [7 atoms](QSGW80_20261008/bands_7atoms.md), [8 atoms](QSGW80_20261008/bands_8atoms.md).
-Gaps of all materials: [QSGW80_20261008/table.md](QSGW80_20261008/table.md).
+**Bands and DOS of the newest version (QSGW80_20261009), by the number of atoms in the cell:** [1 atoms](QSGW80_20261009/bands_1atoms.md), [2 atoms](QSGW80_20261009/bands_2atoms.md), [3 atoms](QSGW80_20261009/bands_3atoms.md), [4 atoms](QSGW80_20261009/bands_4atoms.md), [5 atoms](QSGW80_20261009/bands_5atoms.md), [6 atoms](QSGW80_20261009/bands_6atoms.md), [7 atoms](QSGW80_20261009/bands_7atoms.md), [8 atoms](QSGW80_20261009/bands_8atoms.md).
+Gaps of all materials: [QSGW80_20261009/table.md](QSGW80_20261009/table.md).
 
 Databases of band gaps, band structures and DOS of about 1500 nonmagnetic materials of the Materials Project, computed with
 [ecalj](https://github.com/tkotani/ecalj) (QSGW, LDA, MLO models). Each database has its own cover page with the conditions,
-the version of ecalj of every value, and the checks. The newest is in the tree; an earlier version is kept as a git tag, with
-a file of what the newer one changed.
+the version of ecalj of every value, and the checks. The latest version is kept in the tree; an earlier version is kept whole as
+a git tag, and in the tree as its difference from the latest.
 
 | database | made | content | files |
 | --- | --- | --- | --- |
-| [QSGW80_20261008](QSGW80_20261008/README.md) | 2026-10-08 13:23 | QSGW80 (scaledsigma 0.8) iterated to convergence, LDA, MLO model (MLO: PASS 1538, FAIR 4, SKIPPED 2, OK 2) | tables, figures, history, inputs (ctrlg), band data |
-| [QSGW80_20261007](https://github.com/tkotani/DOSnpSupplement/tree/QSGW80_20261007/QSGW80_20261007) (git tag `QSGW80_20261007`) | 2026-10-07 | an earlier version; [what changed after it](QSGW80_20261008/changes_from_20261007.md) (a past log) | in the tag only |
-| [QSGW80_2026](https://github.com/tkotani/DOSnpSupplement/tree/QSGW80_20261003/QSGW80_2026) (git tag `QSGW80_20261003`) | 2026-10-03 | an earlier version; [what changed after it](QSGW80_20261008/changes_from_20261003.md) (a past log) | in the tag only; the DOS panel of its figures is shifted by E_F |
+| [QSGW80_20261009](QSGW80_20261009/README.md) | 2026-10-22 12:26 | QSGW80 (scaledsigma 0.8) iterated to convergence, LDA, MLO model (MLO: PASS 1539, FAIR 3, SKIPPED 2, OK 2) | tables, figures, history, inputs (ctrlg), band data |
+| [QSGW80_20261008](https://github.com/tkotani/DOSnpSupplement/tree/QSGW80_20261008/QSGW80_20261008) (git tag `QSGW80_20261008`) | 2026-10-08 | an earlier version; [its difference from the latest](QSGW80_20261009/changes_from_20261008.md) | in the tag only |
+| [QSGW80_20261007](https://github.com/tkotani/DOSnpSupplement/tree/QSGW80_20261007/QSGW80_20261007) (git tag `QSGW80_20261007`) | 2026-10-07 | an earlier version; [its difference from the latest](QSGW80_20261009/changes_from_20261007.md) | in the tag only |
+| [QSGW80_2026](https://github.com/tkotani/DOSnpSupplement/tree/QSGW80_20261003/QSGW80_2026) (git tag `QSGW80_20261003`) | 2026-10-03 | an earlier version; [its difference from the latest](QSGW80_20261009/changes_from_20261003.md) | in the tag only; the DOS panel of its figures is shifted by E_F |
 | [DOSnp2025](DOSnp2025.md) | 2025 | 1shot and 2ndshot QSGW and LDA of 1516 materials, the supplement of arXiv:2507.19189 | tables, band plots (GW/, LDA/) |
 
 The crystal structures are those of the Materials Project (`ecalj_auto/INPUT/gw1500/POSCARALL` in ecalj).

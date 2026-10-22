@@ -1,15 +1,16 @@
-# Changes from QSGW80_2026 (2026-10-03) — a past log: only what QSGW80_20261007 updated
+# QSGW80_2026 (2026-10-03) as a difference from the latest version QSGW80_20261009
 
-The database of 2026-10-03 is kept as the git tag [QSGW80_20261003](https://github.com/tkotani/DOSnpSupplement/tree/QSGW80_20261003/QSGW80_2026) (not in the present tree). This file lists only the materials whose
-adopted QSGW80 value changed in QSGW80_20261007; every other material has the same value from the same run as in 2026-10-03.
-Machine-readable: [changes_from_20261003.tsv](changes_from_20261003.tsv). The present values, conditions and checks: [README.md](README.md).
+The database is kept as the latest version (QSGW80_20261009, this directory); the version of 2026-10-03 is kept whole as the git tag
+[QSGW80_20261003](https://github.com/tkotani/DOSnpSupplement/tree/QSGW80_20261003/QSGW80_2026), and here as its difference from the latest: the materials whose adopted QSGW80 value in 2026-10-03 differs from the latest
+one. Every other material has the same value from the same run. Machine-readable: [changes_from_20261003.tsv](changes_from_20261003.tsv).
+The latest values, conditions and checks: [README.md](README.md).
 
-- Materials: 1546; the same value: 483; changed: 1063 (by more than 0.1 eV: 120)
-- Why (the set of the adopted run, 2026-10-03 -> now): May production -> database run 607; rerun -> database run 215; May production -> run with empty spheres 95; database run -> run with empty spheres 90; rerun -> run with empty spheres 55; the same set, run again 1
-- Besides: MLO models of every material, the runs with empty spheres, the inputs and the band data were added. The DOS panel of
-  the figures of 2026-10-03 is shifted by E_F (the gaps and the bands are right); corrected in QSGW80_20261007.
+- Materials: 1546; the same value: 483; different: 1063 (by more than 0.1 eV: 120)
+- Why (the set of the adopted run, 2026-10-03 -> latest): May production -> database run 607; rerun -> database run 215; May production -> run with empty spheres 95; database run -> run with empty spheres 90; rerun -> run with empty spheres 55; the same set, run again 1
+- In 2026-10-03 the MLO models, the runs with empty spheres, the inputs and the band data were not there yet, and the DOS panel of its
+  figures is shifted by E_F (the gaps and the bands are right).
 
-| mpid | formula | 2026-10-03 | now | difference (eV) | why |
+| mpid | formula | 2026-10-03 | latest | latest − 2026-10-03 (eV) | why |
 | --- | --- | --- | --- | --- | --- |
 | mp-569416 | C8 | 4.968 M | 4.149 E | -0.819 | May production -> run with empty spheres |
 | mp-25 | N8 | 13.392 R | 12.646 E | -0.746 | rerun -> run with empty spheres |
@@ -392,13 +393,13 @@ Machine-readable: [changes_from_20261003.tsv](changes_from_20261003.tsv). The pr
 | mp-1078469 | Cu2P2N4 | 3.147 M | 3.115 N | -0.032 | May production -> database run |
 | mp-5229 | SrTiO3 | 3.597 M | 3.629 N | 0.032 | May production -> database run |
 | mp-1080650 | Ba2Cu2S2F2 | 3.079 M | 3.111 N | 0.032 | May production -> database run |
-| mp-561320 | Pb2S2 | 4.120 M | 4.151 E | 0.031 | May production -> run with empty spheres |
 | mp-2784 | Na2Te | 3.808 N | 3.778 E | -0.030 | database run -> run with empty spheres |
 | mp-22313 | Na2PtO2 | 3.806 M | 3.837 N | 0.030 | May production -> database run |
 | mp-8016 | Al2Cu2Se4 | 2.320 M | 2.289 N | -0.030 | May production -> database run |
 | mp-8017 | Al2Cu2Te4 | 2.242 M | 2.212 N | -0.030 | May production -> database run |
 | mp-19183 | Li2NiO2 | 2.784 R | 2.814 N | 0.030 | rerun -> database run |
 | mp-5256 | K2Cu2C4 | 3.999 M | 4.029 N | 0.030 | May production -> database run |
+| mp-561320 | Pb2S2 | 4.120 M | 4.149 E | 0.029 | May production -> run with empty spheres |
 | mp-34903 | Mg2Ge2P4 | 2.193 M | 2.164 N | -0.029 | May production -> database run |
 | mp-23432 | Ba2Cl2F2 | 8.347 M | 8.318 N | -0.029 | May production -> database run |
 | mp-2371 | Ga2Te5 | 1.546 N | 1.517 E | -0.029 | database run -> run with empty spheres |
@@ -678,6 +679,7 @@ Machine-readable: [changes_from_20261003.tsv](changes_from_20261003.tsv). The pr
 | mp-13097 | Na2Zn2As2 | 1.376 M | 1.369 N | -0.007 | May production -> database run |
 | mp-1018722 | Hg3Se3 | 1.808 M | 1.801 N | -0.007 | May production -> database run |
 | mp-580941 | Ag4I4 | 3.091 M | 3.098 E | 0.007 | May production -> run with empty spheres |
+| mp-554134 | Sn2S2 | 3.997 R | 3.990 E | -0.007 | rerun -> run with empty spheres |
 | mp-555166 | BaAg2SnS4 | 1.626 M | 1.633 N | 0.007 | May production -> database run |
 | mp-1572 | Ga4Se4 | 2.310 M | 2.317 E | 0.007 | May production -> run with empty spheres |
 | mp-3486 | K2Sn2Sb2 | 0.851 M | 0.858 N | 0.007 | May production -> database run |
@@ -755,7 +757,6 @@ Machine-readable: [changes_from_20261003.tsv](changes_from_20261003.tsv). The pr
 | mp-864954 | Mg2Mo2N4 | 1.578 M | 1.582 N | 0.004 | May production -> database run |
 | mp-3525 | Sb2Te2Se | 0.355 M | 0.351 N | -0.004 | May production -> database run |
 | mp-189 | Si4Ru4 | 0.408 M | 0.404 N | -0.004 | May production -> database run |
-| mp-554134 | Sn2S2 | 3.997 R | 3.994 E | -0.004 | rerun -> run with empty spheres |
 | mp-3481 | K2Sn2As2 | 1.021 M | 1.017 N | -0.004 | May production -> database run |
 | mp-29754 | Sr2Li2N2 | 1.168 M | 1.172 N | 0.004 | May production -> database run |
 | mp-20187 | Li2In2Se4 | 2.950 M | 2.946 N | -0.004 | May production -> database run |

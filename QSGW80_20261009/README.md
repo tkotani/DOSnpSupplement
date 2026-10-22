@@ -1,6 +1,6 @@
-# GW1500 (2026-10-08) — QSGW80 band gaps, bands and DOS of 1546 materials (ecalj)
+# GW1500 (2026-10-09) — QSGW80 band gaps, bands and DOS of 1546 materials (ecalj)
 
-Made 2026-10-08 13:23 by `gw1500db_build.py` (ecalj, `ecalj_auto`). An update of the 2025 database
+Made 2026-10-22 12:26 by `gw1500db_build.py` (ecalj, `ecalj_auto`). An update of the 2025 database
 [tkotani/DOSnpSupplement](https://github.com/tkotani/DOSnpSupplement) (1shot/2shot QSGW of 1516 materials, the supplement of arXiv:2507.19189):
 here every material is QSGW80 (scaledsigma = 0.8) iterated to convergence, the conditions of each value are written,
 and results of different conditions are compared.
@@ -11,7 +11,7 @@ and results of different conditions are compared.
   (structures `ecalj_auto/INPUT/gw1500/POSCARALL`). The structures of MP are not always the experimental ones.
 
 
-## Files for reproducing (this snapshot, 2026-10-08)
+## Files for reproducing (this snapshot, 2026-10-09)
 
 - `inputs/<mpid>/ctrlg.<mpid>.toml`: the input of the run whose QSGW80 value is adopted (the bold value of the table), as it was at the
   end of that run; `syml.<mpid>`: its band path; `source.txt`: which run (set N, E, R or M), the ecalj version and the machine.
@@ -33,7 +33,7 @@ and results of different conditions are compared.
   of the earlier runs came from the TF32 precision of May, the k mesh, or empty spheres that overlapped or were too large.
   
 - **Empty spheres** (set E, 240 materials) by one rule, `ctrlg_addes.py`, whose version is written per material:
-  es-a 63, es-b 4, es-c 172, es-d 1 (table "Rules that changed" below; no ES overlaps another sphere in any input, checked
+  es-a 63, es-b 4, es-c 171, es-d 2 (table "Rules that changed" below; no ES overlaps another sphere in any input, checked
   2026-10-07). 7 materials have ES placed by hand where the rule failed (slabs with a vacuum, molecular crystals,
   a small void between large K spheres):
   - C3N4: ctrlg_addes.py --rmin 1.8, three ES between the layers (2.96, 2.54, 2.30 a.u.) (mp-570572)
@@ -41,11 +41,11 @@ and results of different conditions are compared.
   - C4O4: ES 2.5 a.u., s (3.5 a.u. of the rule: the gap swung 7.7–9.6 eV) (mp-11875)
   - K4BeP2: one ES of 2.2 a.u. (2.9 a.u. of the rule broke the LDA between the large K spheres) (mp-9872)
   - PbS slab: ES on the next layer outside both surfaces (2.6 a.u.) and one at the vacuum centre (2.9 a.u.) (mp-726184)
-  - SnS slab: ES outside both surfaces and two at the vacuum centre (2.65 a.u.) (mp-554134)
+  - SnS slab (rule es-d): ES outside both surfaces (1.9 a.u.), two more layers on each side (1.9 a.u.) and two at the vacuum centre (2.65 a.u.), 14 ES, s,p; with the surface and centre ES only (s) the MLO was FAIR 0.24 eV (mp-554134)
   - PbS slab (rule es-d): ES outside both surfaces (2.35 a.u.), one more layer on each side (2.6 a.u.) and one at the vacuum centre (3.0 a.u.), s,p on every ES; with the surface and centre ES only (s) the MLO missed one band of the vacuum (0.38 eV) (mp-561320)
 
-- **MLO models: 1546** (PASS 1538, FAIR 4, SKIPPED 2, OK 2), by the standard recipe (b1 990, b2 420, b2all 106, b2d 28, x_s_only 1;
-  see "MLO models"). Not PASS: Sr mp-1056418 (SKIPPED, TOO_LARGE); BN mp-685145 (FAIR, largest deviation 0.24 eV); CsF mp-1784 (OK, largest deviation 0.10 eV); H2 mp-632291 (FAIR, largest deviation 0.11 eV); Sn2S2 mp-554134 (FAIR, largest deviation 0.24 eV); C2Br2N2 mp-730189 (OK, largest deviation 0.16 eV); H8 mp-730101 (FAIR, largest deviation 0.15 eV); Rb8 mp-1179832 (SKIPPED, TOO_LARGE). A largest deviation up to 0.3 eV (FAIR) is fit to present.
+- **MLO models: 1546** (PASS 1539, FAIR 3, SKIPPED 2, OK 2), by the standard recipe (b1 991, b2 420, b2all 105, b2d 28, x_s_only 1;
+  see "MLO models"). Not PASS: Sr mp-1056418 (SKIPPED, TOO_LARGE); BN mp-685145 (FAIR, largest deviation 0.24 eV); CsF mp-1784 (OK, largest deviation 0.10 eV); H2 mp-632291 (FAIR, largest deviation 0.11 eV); C2Br2N2 mp-730189 (OK, largest deviation 0.16 eV); H8 mp-730101 (FAIR, largest deviation 0.15 eV); Rb8 mp-1179832 (SKIPPED, TOO_LARGE). A largest deviation up to 0.3 eV (FAIR) is fit to present.
   Most troubles of the models were troubles of the QSGW80 bands they are compared with: states in a vacuum or a void without ES,
   or a ghost level of a large MT sphere (Rb2Sc2O4, see "Conditions"), not a lack of basis.
 - **Gaps to read with care**: path-metal (5, graphite-like carbons: semimetals although the 8x8x8 mesh
@@ -98,7 +98,7 @@ D/I: direct or indirect gap along the band path of the figure (the gap value its
 (`path<mesh(mesh)`: the mesh misses the band extremum, so the true gap is nearer the path value; e.g. rocksalt SnS 0.79 on
 the mesh, 0.04 on the path, 0.08 in 2025). `· path 0 (semimetal?)`: the bands cross E_F on the path (graphite-like carbons).
 
-## Status (2026-10-08 13:23)
+## Status (2026-10-22 12:26)
 
 | adopted from | materials |
 | --- | --- |
@@ -165,7 +165,7 @@ Variants whose name starts with `x_` were made by hand outside the recipe for ma
 "標準手法でないやりかたでもいいからまずはつくって"); what was changed is in the variant name, the figure title and the note of the
 material (e.g. `x_s_only`: solid H2 with H s, EH2 s and ES s only; the EH2 p of the recipe made the MLO overlap singular).
 The model matrices (hundreds of MB per material) are not kept; the recipe makes them again.
-Models so far: 1546 (PASS 1538, FAIR 4, SKIPPED 2, OK 2).
+Models so far: 1546 (PASS 1539, FAIR 3, SKIPPED 2, OK 2).
 
 ## Automatic checks
 
@@ -184,7 +184,7 @@ Models so far: 1546 (PASS 1538, FAIR 4, SKIPPED 2, OK 2).
 | N:SKIP | 2 | database run did not converge (SKIP) |
 | N:TIMEOUT | 9 | database run did not converge (TIMEOUT) |
 
-## Later list (6)
+## Later list (5)
 
 Materials left for later (user 2026-10-06: the hard ones go to a list): no adopted QSGW80 result, or no MLO model of grade PASS/OK. Also in `later_list.tsv`.
 
@@ -193,7 +193,6 @@ Materials left for later (user 2026-10-06: the hard ones go to a list): no adopt
 | [mp-1056418](bands_1atoms.md#mp-1056418) | Sr | 1 | skipped: TOO_LARGE (the QSGW80 value is kept, no MLO model) |
 | [mp-685145](bands_2atoms.md#mp-685145) | BN | 2 | MLO FAIR (max 0.24 eV, b2all) |
 | [mp-632291](bands_2atoms.md#mp-632291) | H2 | 2 | MLO FAIR (max 0.11 eV, x_s_only) |
-| [mp-554134](bands_4atoms.md#mp-554134) | Sn2S2 | 4 | MLO FAIR (max 0.24 eV, b2all) |
 | [mp-730101](bands_8atoms.md#mp-730101) | H8 | 8 | MLO FAIR (max 0.15 eV, b2) |
 | [mp-1179832](bands_8atoms.md#mp-1179832) | Rb8 | 8 | not computed: TOO_LARGE (the cell is too large for the present runs) |
 
@@ -397,6 +396,9 @@ Materials left for later (user 2026-10-06: the hard ones go to a list): no adopt
 
 ## Limits
 
+- Slabs (a vacuum layer in the cell, from the Materials Project): the QSGW80 gap depends on the thickness of the vacuum (screening by the
+  periodic images): the same PbS slab gives 3.725 eV with 13.7 A of vacuum (mp-726184) and 4.152 eV with 19.4 A (mp-561320), while LDA
+  gives 1.728 and 1.738 eV. Read the value of a slab as that of its cell.
 - k mesh: the gap is that of lmf on the 8x8x8 mesh. When the band extremum is not on the mesh (layered and hexagonal
   materials, K and M points), the true gap is nearer the gap along the band path (`· path` in the table, check
   `path<mesh(mesh)`). Graphite-like carbons are semimetals although the mesh shows a gap (`path-metal`).
